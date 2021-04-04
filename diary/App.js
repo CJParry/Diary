@@ -3,7 +3,11 @@ import React , {useState} from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Gallery from './pages/Gallery'
+
+import Gallery from './pages/Gallery';
+import Home from './pages/Home';
+import AddContent from './pages/AddContent';
+
  
 export default function App() {
 
@@ -44,7 +48,9 @@ export default function App() {
     // </View>
     <NavigationContainer>
        <Tab.Navigator>
-        <Tab.Screen name="Home" component={Gallery} />
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Add Content" component={AddContent} />
+        <Tab.Screen name="Gallery" component={Gallery} />
       </Tab.Navigator>
     </NavigationContainer>
   );
