@@ -1,0 +1,2 @@
+# Diary
+Diary, not dairy
